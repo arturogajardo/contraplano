@@ -1,0 +1,66 @@
+/* En tu archivo .scss correspondiente */
+/* En tu archivo .scss correspondiente */
+.esferas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px; /* Ajusta el tamaño del botón */
+    height: 120px; /* Ajusta el tamaño del botón */
+    margin: 10px;
+    font-size: 28px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+  }
+
+.red-social-button ion-icon {
+  font-size: 48px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+.red-social-button.blanco {
+  background-color: white;
+  color: black;
+}
+
+.red-social-button.negro {
+  background-color: black;
+  color: white;
+}
+
+.red-social-button:focus {
+  background-color: var(--ion-color-primary); /* Cambia este color si es necesario */
+}
+
+.red-social-button:active {
+  transform: scale(1.1);
+}
+
+  
+  /* En tu archivo .scss correspondiente */
+.toolbar-title {
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  
+  
+  

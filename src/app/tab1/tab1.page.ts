@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,19 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  newsWithImages: any[] = [];
+
+
+  constructor(private http: HttpClient) {
+    this.loadNewsWithImages();
+  }
+
+  loadNewsWithImages() {
+    const apiUrl = 'http://127.0.0.1:8000/scrape_news';  // Reemplaza con la URL de tu API
+
+    this.http.get(apiUrl).subscribe((data: any) => {
+      this.newsWithImages = data.news_with_images;
+    });
+  }
 
 }

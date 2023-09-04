@@ -1,17 +1,26 @@
-<ion-header [translucent]="true">
+<ion-header collapse="condense">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-row class="center-title">
+      <ion-col size="auto">
+        <ion-img src="assets/images/logo.png" alt="Medios Contraplano" class="header-image"></ion-img>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-title size="large" class="header-title">Medios Contraplano</ion-title>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+  <ion-card *ngFor="let news of newsWithImages">
+    <ion-img [src]="news.image"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        <a [href]="news.link" target="_blank">{{ news.heading }}</a>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ news.excerpt }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

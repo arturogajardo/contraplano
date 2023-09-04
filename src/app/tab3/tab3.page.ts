@@ -9,4 +9,8 @@ export class Tab3Page {
 
   constructor() {}
 
+  abrirEnlace(url: string) {
+    window.open(url, '_system');
+  }
+
 }

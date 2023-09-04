@@ -1,0 +1,45 @@
+.news-link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  ion-card-title a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+/* Estilo para la fila centrada */
+.center-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilo para la imagen del encabezado */
+  .header-image {
+    max-width: 200px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: auto;
+  }
+  
+  /* Estilo para el título del encabezado */
+  .header-title {
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+    font-weight: bold;
+  }
+
+  /* Estilo para las tarjetas */
+  .card-spacing {
+    margin-top: 20px;
+  }
+
+  /* Estilo para el título de las noticias */
+  .news-title {
+    text-align: center;
+  }
+  
+  
+  
