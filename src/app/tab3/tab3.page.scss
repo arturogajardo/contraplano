@@ -1,5 +1,8 @@
 /* En tu archivo .scss correspondiente */
 /* En tu archivo .scss correspondiente */
+
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
+
 .esferas-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +10,12 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
+}
+
+ion-content {
+  --ion-background-color: #0E1621; /* Cambia el fondo a un color oscuro */
+  --ion-text-color: #E0E0E0; /* Cambia el color del texto a blanco */
+  --ion-font-family: 'Victor Mono', monospace;
 }
 
 ion-col {
@@ -36,12 +45,12 @@ ion-col {
 }
 
 .red-social-button.blanco {
-  background-color: white;
-  color: black;
+  background-color: #507BC3;
+  color: #FFFFFF;
 }
 
 .red-social-button.negro {
-  background-color: black;
+  background-color: #1E1E1E;
   color: white;
 }
 
@@ -59,6 +68,8 @@ ion-col {
     text-align: center;
     width: 100%;
   }
+
+  
   
   
   

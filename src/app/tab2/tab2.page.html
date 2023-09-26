@@ -1,19 +1,20 @@
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
       <div class="center-title">
-        <ion-title size="large">Ediciones</ion-title>
+        <ion-title size="large">EDICIONES</ion-title>
       </div>
     </ion-toolbar>
   </ion-header>
 
-  <ion-list>
-    <ion-item *ngFor="let news of newsWithoutImages">
-      <ion-label>
-        <h2>{{ news.heading }}</h2>
-        <p>{{ news.excerpt }}</p>
-        <a [href]="news.link" target="_blank">Leer más</a>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-card *ngFor="let news of newsWithoutImages">
+    <a [href]="news.link" target="_blank">
+      <ion-img [src]="news.image"></ion-img>
+    </a>
+    <ion-card-content>
+      <ion-card-title>{{ news.heading }}</ion-card-title>
+      <p>{{ news.excerpt }}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+  

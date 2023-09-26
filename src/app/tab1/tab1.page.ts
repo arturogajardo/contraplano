@@ -16,10 +16,10 @@ export class Tab1Page {
   }
 
   loadNewsWithImages() {
-    const apiUrl = 'http://127.0.0.1:8000/scrape_news';  // Reemplaza con la URL de tu API
+    const apiUrl = 'http://127.0.0.1:8000/data';  // Reemplaza con la URL de tu API
 
     this.http.get(apiUrl).subscribe((data: any) => {
-      this.newsWithImages = data.news_with_images;
+      this.newsWithImages = data.noticias;
     });
   }
 

@@ -1,15 +1,32 @@
 /* En tu archivo .scss correspondiente */
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
+
 .center-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-bottom: 80px; 
+    margin-bottom: 30px; 
+    margin-top: 30px;
   }
   
   .center-title ion-title {
     text-align: center;
   }
+
+  /* Cambia el fondo de la página */
+ion-content {
+  --ion-background-color: #0E1621; /* Cambia el fondo a un color oscuro */
+  --ion-text-color: #E0E0E0; /* Cambia el color del texto a blanco */
+  --ion-font-family: 'Victor Mono', monospace;
+}
+
+/* Cambia el color de fondo de las cards */
+ion-card {
+  background-color: #507BC3; /* Cambia el color de fondo de las cards a azul eléctrico */
+  color: #FFFFFF; /* Cambia el color del texto de las cards a blanco */
+}
+
   
   

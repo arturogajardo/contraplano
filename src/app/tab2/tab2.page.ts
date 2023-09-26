@@ -17,9 +17,9 @@ export class Tab2Page implements OnInit{
   }
 
   getNewsWithoutImages() {
-    const apiUrl = 'http://localhost:8000/scrape_news'; // Cambia la URL a tu API
+    const apiUrl = 'http://localhost:8000/data'; // Cambia la URL a tu API
     this.http.get(apiUrl).subscribe((data: any) => {
-      this.newsWithoutImages = data.news_without_images;
+      this.newsWithoutImages = data.revistas;
     });
   }
 
