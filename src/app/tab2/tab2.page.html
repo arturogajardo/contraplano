@@ -2,19 +2,20 @@
   <ion-header>
     <ion-toolbar>
       <div class="center-title">
-        <ion-title size="large">EDICIONES</ion-title>
+        <!-- Reemplaza 'tu-logo.png' con la ruta de tu imagen de logotipo -->
+        <ion-img class="logo" src="assets/images/logo.png"></ion-img>
       </div>
     </ion-toolbar>
   </ion-header>
 
-  <ion-card *ngFor="let news of newsWithoutImages">
-    <a [href]="news.link" target="_blank">
-      <ion-img [src]="news.image"></ion-img>
+  <ion-card *ngFor="let revista of revistasData">
+    <a [href]="revista.link" target="_blank">
+      <ion-img [src]="revista.image"></ion-img>
     </a>
     <ion-card-content>
-      <ion-card-title>{{ news.heading }}</ion-card-title>
-      <p>{{ news.excerpt }}</p>
+      <ion-card-title>{{ revista.titulo }}</ion-card-title>
     </ion-card-content>
   </ion-card>
 </ion-content>
+
   

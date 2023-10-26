@@ -28,5 +28,11 @@ ion-card {
   color: #FFFFFF; /* Cambia el color del texto de las cards a blanco */
 }
 
-  
+.logo {
+  max-width: 125px; /* ajusta el ancho máximo según sea necesario */
+  max-height: 85px; /* ajusta el alto máximo según sea necesario */
+  display: block; /* asegura que la imagen se muestre como un bloque */
+  margin: 0 auto; /* centra la imagen horizontalmente en la barra de herramientas */
+}
+
   
