@@ -1,4 +1,4 @@
-// revistas.service.ts
+
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class RevistasService {
-  private apiUrl = 'http://127.0.0.1:8000/revistas/';
+  private apiUrl = 'https://apicontraplano.onrender.com/revistas/';
 
   constructor(private http: HttpClient) {}
 
@@ -17,7 +17,7 @@ export class RevistasService {
   }
 }
 
-// Define la interfaz Revista
+
 export interface Revista {
   id: number;
   link: string;

@@ -1,4 +1,4 @@
-// tab2.page.ts
+
 import { Revista } from '../revistas.service';
 import { Component, OnInit } from '@angular/core';
 import { RevistasService } from 'src/app/revistas.service';

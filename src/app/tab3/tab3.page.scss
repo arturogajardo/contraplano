@@ -41,7 +41,7 @@ ion-col {
   }
 
 .red-social-button ion-icon {
-  font-size: 48px; /* Ajusta el tamaño del icono según sea necesario */
+  font-size: 48px; 
 }
 
 .red-social-button.blanco {
@@ -55,7 +55,7 @@ ion-col {
 }
 
 .red-social-button:focus {
-  background-color: var(--ion-color-primary); /* Cambia este color si es necesario */
+  background-color: var(--ion-color-primary); 
 }
 
 .red-social-button:active {
@@ -63,7 +63,7 @@ ion-col {
 }
 
   
-  /* En tu archivo .scss correspondiente */
+
 .toolbar-title {
     text-align: center;
     width: 100%;

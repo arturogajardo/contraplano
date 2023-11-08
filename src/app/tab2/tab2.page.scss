@@ -1,4 +1,3 @@
-/* En tu archivo .scss correspondiente */
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
 
 .center-title {
@@ -15,24 +14,24 @@
     text-align: center;
   }
 
-  /* Cambia el fondo de la página */
+
 ion-content {
-  --ion-background-color: #0E1621; /* Cambia el fondo a un color oscuro */
-  --ion-text-color: #E0E0E0; /* Cambia el color del texto a blanco */
+  --ion-background-color: #0E1621; 
+  --ion-text-color: #E0E0E0; 
   --ion-font-family: 'Victor Mono', monospace;
 }
 
-/* Cambia el color de fondo de las cards */
+
 ion-card {
-  background-color: #507BC3; /* Cambia el color de fondo de las cards a azul eléctrico */
-  color: #FFFFFF; /* Cambia el color del texto de las cards a blanco */
+  background-color: #507BC3; 
+  color: #FFFFFF; 
 }
 
 .logo {
-  max-width: 125px; /* ajusta el ancho máximo según sea necesario */
-  max-height: 85px; /* ajusta el alto máximo según sea necesario */
-  display: block; /* asegura que la imagen se muestre como un bloque */
-  margin: 0 auto; /* centra la imagen horizontalmente en la barra de herramientas */
+  max-width: 125px; 
+  max-height: 85px; 
+  display: block; 
+  margin: 0 auto; 
 }
 
   
